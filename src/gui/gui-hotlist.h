@@ -43,6 +43,7 @@ struct t_gui_hotlist
     struct timeval creation_time;          /* time when entry was added     */
     struct t_gui_buffer *buffer;           /* associated buffer             */
     int count[GUI_HOTLIST_NUM_PRIORITIES]; /* number of msgs by priority    */
+    int buffer_priority;                   /* corresponding buffer priority */
     struct t_gui_hotlist *prev_hotlist;    /* link to previous hotlist      */
     struct t_gui_hotlist *next_hotlist;    /* link to next hotlist          */
 };
